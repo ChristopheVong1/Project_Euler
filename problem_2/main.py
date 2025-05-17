@@ -14,9 +14,11 @@ def problem_2(max_number):
         
     Returns: int: The sum of all even-valued Fibonacci numbers below max_number.
     """
-    
+
+    # Creates a sequence of Fibonacci up to a certain limit max_number
     fibonacci_list=fibonacci_maker(max_number)
 
+    # Returns the sum of all even-valued Fibonacci numbers below the limit
     return even_sum(fibonacci_list)
 
 print(problem_2(40_000_000))
