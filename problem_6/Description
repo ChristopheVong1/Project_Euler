@@ -1,0 +1,17 @@
+Problem:
+
+The sum of the squares of the first ten natural numbers is 385.
+The square of the sum of the first ten natural numbers is 3025.
+Hence the difference between the sum of the squares of the first ten natural numbers and the square of the sum is 3025-385=2640.
+
+Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.
+
+Solution:
+
+Seems easy using brute forcing.
+- Make a function to calculate the sum of squares of X natural numbers
+- Make a function to calculate the sum of first X natural numbers
+- Make the difference
+
+There is also another method (not implemented) using a mathematical identity:
+(Σn)² - Σ(n²) = n(n+1)(3n²-n-2)/12 (for n=100: 25,164,150)
