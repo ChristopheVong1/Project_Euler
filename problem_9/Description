@@ -1,0 +1,19 @@
+Problem:
+
+A Pythagorean triplet is a set of three natural numbers, a<b<c, for which, a²+b²=c².
+
+For example, 3²+4²=9+16=25=5².
+
+There exists exactly one Pythagorean triplet for which a+b+c=1000.
+Find the product abc.
+
+Solution:
+
+We can do brute forcing by testing every combination but we first need to restrict the range for each letters.
+
+- a, b and c are natural numbers, the lower limit is 1.
+- Because a<b<c and a+b+c=1000, the upper limit of a is 1000/3=333.
+- The upper limit of b is (1000-a)/2 if b=c in the worst case.
+- For every a from 1 to 333, we test every b, b>a up to its upper limit.
+- We calculate a²+b²=c² and we calculate if c is a natural number.
+- If the conditions are completed, we calculate abc.
