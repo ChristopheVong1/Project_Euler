@@ -1,0 +1,15 @@
+Problem:
+
+Starting in the top-left corner of a 2×2 grid, and only being able to 
+move right or down, there are exactly 6 routes to reach the 
+bottom-right corner.
+
+How many such routes exist through a 20×20 grid?
+
+Solution:
+
+It seems that the problem is about counting the number of unique permutations of moves (right/down). For a n*n grid, you must take exactly n right and n down in any order.
+
+The solution is the central binomial coefficient (or combination).
+Number of paths = (2n)!/(n!)²
+For instance, for 2*2 grid, "2 parmi 4" = 6 paths
