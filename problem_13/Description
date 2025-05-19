@@ -1,0 +1,10 @@
+Problem:
+
+Work out the first ten digits of the sum of the following one-hundred 50-digit numbers
+
+Solution:
+
+It is just a sum of numbers so just do it ?
+- Need to parse the huge list of number, there is a 100 line of 50-digit numbers
+- Make the sum
+- Convert the value into an iterable/string and return the first ten value
