@@ -14,3 +14,6 @@ What is the value of the first triangle number to have over five
 hundred divisors?
 
 Solution:
+
+- Calculate the nth triangle number using Tn=1+2+3+...+n=n*(n+1)/2
+- We use prime factorization to find the divisor count
