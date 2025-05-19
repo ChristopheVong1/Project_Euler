@@ -2,14 +2,11 @@ Problem:
 
 The Collatz sequence is defined for any positive integer n as follows:
 
-    If n is even: n→n/2
+    If n is even: n-->n/2
 
-    If n is odd: n→3n+1
+    If n is odd: n-->3n+1
 
 The sequence terminates when n reaches 1.
-
-Example (for n=13):
-13→40→20→10→5→16→8→4→2→1(Length: 10 terms)
 
 Find the starting number (under one million) that produces the longest Collatz chain.
 
