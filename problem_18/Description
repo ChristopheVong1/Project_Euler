@@ -1,0 +1,13 @@
+Description:
+
+Given a triangle of numbers, you must find the maximum total sum from the top to the bottom, moving to adjacent numbers on the row below.
+
+Solution:
+
+It is possible to brute force the solution but it is recommended to not do it because problem 67 is the same and can't be brute force.
+
+We can only move down left or down right because of the adjacent rules in the next row.
+
+The triangle will be a nested list: a row for a row in the triangle. Here, we have 15 rows.
+
+The best method is to us a dynamic approach by going from bottom to top instead of top to bottom. We look at second to last row and we calculate with the last row to find the biggest last row.
