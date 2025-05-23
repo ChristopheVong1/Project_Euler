@@ -1,0 +1,23 @@
+Description:
+
+You are given the following information but you may p0fezr to do some research for yourself.
+
+- 1 Jan 1900 was a Monday.
+- Thirty days has September, 
+ April, June and November.
+ All the rest have thirty-one,
+ Saving February alone,
+ Which has twenty-eight, rain or shine.
+ And on leap years, twenty-nine.
+- A leap year occurs on any year divisible by 4, but not on a century unless it is divisible by 400.
+
+How many Sundays fell on the first of the month (e.g., 1st January, 1st February, etc.) during the 20th century (1 Jan 1901 to 31 Dec 2000)?
+
+Solution:
+
+- We know that 1 Jan 1900 was a Monday (start point) but we only consider Sundays from 1 Jan 1901.
+- 1900 is not a leap year (because of century rules).
+- We need to find the day of the week for the 1st of each month.
+- We have to consider leap year for February (28 or 29 days) which will shift the weekday.
+- There is a module called "datetime" with the function weekday() which return the weekday of a specific date.
+- Then we just need to find a way to loop every date from 1 Jan 1901 to 31 Dec 2000
