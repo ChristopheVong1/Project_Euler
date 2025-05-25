@@ -1,0 +1,9 @@
+Description:
+
+Given a number n, compute the sum of the digits in its factorial (n!).
+
+The challenge is about computing the sum of the digits in 100! (very large number).
+
+Solution:
+
+We can brute force directly the solution in Python.

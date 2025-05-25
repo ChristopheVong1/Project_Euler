@@ -25,5 +25,5 @@ def factorial_digit_sum(n):
 
 # Expected answer: 27
 print(factorial_digit_sum(10))
-# Expected answer:
+# Expected answer: 648
 print(factorial_digit_sum(100))
