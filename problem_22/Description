@@ -1,0 +1,21 @@
+Description:
+
+Using names.txt (right click and 'Save Link/Target As...'), a 46K 
+text file containing over five-thousand first names, begin by sorting
+it into alphabetical order. Then working out the alphabetical value 
+for each name, multiply this value by its alphabetical position in 
+the list to obtain a name score.
+
+Example: COLIN=3+15+12+9+14=53, it is also the 938th names in the list.
+Its final score is 938*53=49714.
+
+What is the total of all name scores in the file ?
+
+Solution:
+
+Seems easy by brute forcing (maybe long sorting).
+- Open the file names.txt and extract the name list
+- Sorting the list in alphabetical order
+- Create a function to give the alphabetical value score for a letter (A=1, B=2)
+- Create a function that give the score for a name using above and its position
+- Sum the final list
