@@ -1,0 +1,18 @@
+Description:
+
+The Fibonacci sequence is defined by the recurrence relation:
+Fₙ = Fₙ₋₁ + Fₙ₋₂, where F₁ = 1 and F₂ = 1.
+
+The first 12 terms of the Fibonacci sequence are:
+1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144.
+
+The 12th term, F₁₂ = 144, is the first term to contain three digits.
+
+What is the index of the first term in the Fibonacci sequence to 
+contain 1000 digits?
+
+Solution:
+
+- We can just brute force it
+- We need a function to count the number of digit for a Fibonacci number
+- We need another function to calculate the next Fibonacci number
