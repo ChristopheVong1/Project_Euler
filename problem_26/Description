@@ -1,0 +1,17 @@
+Description:
+
+A unit fraction contains 1 in the numerator (e.g., 1/2, 1/3, 1/4, ...).
+The decimal representation of unit fractions often terminates (e.g., 
+1/2 = 0.5) or eventually repeats in a recurring cycle (e.g., 
+1/6 = 0.1666666), it has a 1-digit recurring cycle.
+
+The task is to find the integer d < 1000 for which the decimal representation 
+of the fraction *1/d* contains the longest recurring cycle in its 
+digits.
+
+Solution:
+
+- We can brute force by testing every number under 1000
+- We need to compute the cycle length of 1/d, we can simulate dividing
+by hand and stop when the decimal repeats
+- Then track the d with the longest cycle
