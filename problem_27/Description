@@ -1,5 +1,29 @@
 Description:
 
-adza
+Euler discovered the remarkable quadratic formula: n**2+n+41
+
+It turns out that the formula will produce 40 primes for the consecutive 
+integer values 0≤n≤39. However, when n=40, 40**2+40+41=40(40+1)+41 is 
+divisible by 41, and certainly when n=41, 41**2+41+41 is clearly 
+divisible by 41.
+
+The incredible formula n**2−79n+1601 was discovered, which produces 80 
+primes for the consecutive values 0≤n≤79. The product of the coefficients, 
+−79 and 1601, is −126479.
+
+Considering quadratics of the form:
+n2+an+b where ∣a∣<1000 and ∣b∣≤1000, and ∣n∣ is the modulus/absolute value 
+of n (e.g., ∣11∣=11 and ∣−4∣=4).
+
+Find the product a×b for the quadratic expression that produces the 
+maximum number of primes for consecutive values of nn, starting with 
+n=0.
 
 Solution:
+
+- We can brute force it.
+- We need to test every value from -999 to 999 for a, -1000 to 1000 for b7
+- Then for each pair (a,b), we test every n starting from 0 and we check
+if the result is a prime number
+- We store the pair (a,b) that manage to produce the highest n
+- We return the product a*b
