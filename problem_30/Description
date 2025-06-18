@@ -1,0 +1,23 @@
+Description: 
+
+Surprisingly, there are only three numbers that can be written as the sum of fourth powers of their digits:
+1634=1**4+6**4+3**4+4**4
+8208=8**4+2**4+0**4+8**4
+9474=9**4+4**4+7**4+4**4
+
+
+(Note: 1=1**4 is not included since it is not a sum.)
+
+Find the sum of all numbers that can be written as the sum of the fifth powers of their digits.
+
+Solution:
+
+- First we need to find the limit range
+- For a n digit number the min value is 10**(n-1) and max value is 10**(n)-1. For instance, n=2 --> min is 10 and max is 99
+- For a n digit number, the max sum using the fifth power of their digit is n*(9**5) and 9**5=59049.
+- It is possible to find a value if the minimum number is lower than n*(9**5). For instance, n=2, we study number from 10 to 99 and the max value of their sum digit at fifth power is 59049*2. So it is possible to find value.
+- At n=6, n*59049=354 294 and values go from 100 000 to 999 999. So it is still possible.
+- At n=7, n*59049=413 343 and values start from 1 000 000 so it is impossible to find a value that fulfill the condition from n>=7.
+- The numbers will be tested from 1 to 354 294.
+- Then we can brute force it by testing every number under that range.
+- In the end we sum every value for the answer

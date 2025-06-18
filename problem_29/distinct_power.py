@@ -4,11 +4,14 @@ def distinct_power(A,B):
     Args: A, B(int): Upper limit for a and b that are used to compute a**b, A and B >=2
     Return: Return the number of distinct powers
     """
+
+    # We make a set() because it doesn't allow duplicate
     s=set()
     for a in range(2,A+1,1):
         for b in range(2,B+1,1):
             s.add(a**b)
+    # Return the length of the set is like counting the number of unique terms
     return len(s)
 
-# Expected answer: 977358
+# Expected answer: 9183
 print(distinct_power(100,100))
