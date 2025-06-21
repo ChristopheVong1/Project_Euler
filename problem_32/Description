@@ -1,0 +1,20 @@
+Description:
+
+We shall say that an n-digit number is pandigital if it makes use of 
+all the digits 1 to n exactly once. For example, 15234 is a 5-digit 
+pandigital number.
+
+The product 7254 is unusual, as the identity, 39 × 186 = 7254, containing multiplicand, multiplier, and product, is 1 through 9 pandigital.
+
+Find the sum of all products whose multiplicand/multiplier/product identity can be written as a 1 through 9 pandigital
+
+HINT: Some products can be obtained in more than one way so be sure to only include it once in your sum
+
+Solution:
+
+- We need to find a*b=c that use all 9 digits exactly once when concatenated.
+- To concatenate we use str(a)+str(b)+str(c) and check that all 9 digits are used once
+- We can test the product of every number until a certain limit
+- a and b can't be a 5 digits number because the product will be at least 5 digits
+- So we have to check a and b, where a is a 1-2 digit number and b a 4-3 digit number to get a result with a 4 digit number (after concatenation we can get a 1-9 pandigital)
+- Then we return the sum of all product

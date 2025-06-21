@@ -4,6 +4,7 @@ def count_coin_combinations(target, coins):
     dp = [0] * (target + 1)
     dp[0] = 1  # Base case: 1 way to make 0p (using no coins)
     
+    # Test each coin at a time (it also avoid counting duplicate combinations)
     for coin in coins:
         for amount in range(coin, target + 1):
             dp[amount] += dp[amount - coin]
