@@ -37,5 +37,5 @@ def pandigital_products():
     # Return the answer
     return sum(products)
 
-# Expected answer: 
+# Expected answer: 45228
 print(pandigital_products())
