@@ -1,0 +1,17 @@
+Description:
+
+145 is a curious number, as 1! + 4! + 5! = 1 + 24 + 120 = 145.
+Find the sum of all numbers which are equal to the sum of the factorial of their digits.
+Note: As 1! = 1 and 2! = 2 are not sums, they are not included.
+
+Solution:
+
+- We need to find every curious number
+- We need a function to test if a number is curious or not
+- We need to find the upper bound to avoid testing every number
+- The max for n-digit number is n*9! (and 9!=362_880)
+- For a 7 digit number, the max is 7*9!=2_540_160
+- For a 8 digit number, the max is 8*9!=2_903_040 but the minimum 8-digit number is 10_000_000, meaning it is impossible
+- The conclusion is to test every number until 2_540_160 by brute forcing
+- Also we start from 10 because single digit number can't make sums
+- In the end we make the sum of every curious number

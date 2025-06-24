@@ -1,0 +1,17 @@
+Description:
+
+The fraction 49/98 is a curious fraction, as an inexperienced mathematician in attempting to simplify it may incorrectly cancel the 9's and think that 49/98 = 4/8 (which is correct, but for the wrong reason).
+
+We consider fractions like 30/50 = 3/5 to be trivial examples (since they involve cancelling zeros).
+
+There are exactly four non-trivial examples of this type of fraction, less than one in value, and containing two digits in the numerator and denominator.
+
+If the product of these four fractions is given in its lowest common terms, find the value of the denominator.
+
+Solution:
+
+- We can brute force the solution by testing every 2 digit number division (10 to 99) for a/b.
+- To be faster, the result must be a fraction so a<b
+- To be faster, a and b must have a common digit (but not 0 because they are trivial)
+- We need a function to detect if the fraction fulfill the condition of the problem
+- We return the product of the four fractions
