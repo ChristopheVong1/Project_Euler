@@ -1,0 +1,14 @@
+Description:
+
+The number 197 is called a circular prime because all rotations of its digits (197, 971, 719) are also prime.
+
+How many circular primes are there below one million?
+
+Solution:
+
+- We can brute force by testing every number under one million
+- Every number that contains 0,2,4,5,6,8 can't be circular because we can put them as last digit, which will make them divisible
+- Single digit 2 and 5 are allowed
+- We need a function to test if a number is prime
+- We need another function to find every number related to that number using digit rotations
+- To do the rotation of a number with d digit, we move the first digit to the end d-1 times
