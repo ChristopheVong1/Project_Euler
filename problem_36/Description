@@ -1,0 +1,13 @@
+Description:
+
+The decimal number, 585 = 1001001001₂ (binary), is palindromic in both bases (decimal and binary).
+
+Find the sum of all numbers less than 1,000,000 that are palindromic in base 10 (decimal) and base 2 (binary).
+(Note: The palindromic number must not include leading zeros in either base.)
+
+Solution:
+
+- We need a function to check if a number is a palindrome or not (easy)
+- We need a function to convert a number from base 10 to base 2
+- We can brute force every number from 0 to 1_000_000
+- Compute the sum of double base palindrome
