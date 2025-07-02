@@ -1,0 +1,18 @@
+Description:
+
+The number 3797 has an interesting property. Being prime itself, it is possible to continuously remove digits from left to right, and remain prime at each stage: 3797, 797, 97, and 7. Similarly, we can work from right to left: 3797, 379, 37, and 3.
+
+Find the sum of the only eleven primes that are both truncatable from left to right and right to left.
+
+A prime that is truncatable from both left and right in this way is called a truncatable prime.
+
+Note: 2, 3, 5, and 7 are not considered truncatable primes (since they are single-digit primes).
+
+Solution:
+
+- We need a function to check if a number is a prime (see previous problem)
+- We need a function to create left truncatable and right truncatable number from a number
+- There are only 11 numbers so we can stop when we reach the count. 
+- We can avoid numbers that ends in 0,2,4,5,6,8 because they are not prime.
+- We can also avoid numbers that have a 0,2,4,5,6,8 in the middle of the numbers because they can't be truncatable prime.
+- We can try a brute force method to see if it works.
