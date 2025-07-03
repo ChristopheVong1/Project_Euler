@@ -1,0 +1,36 @@
+Description:
+
+Take the number 192 and multiply it by 1, 2, and 3:
+
+    192 × 1 = 192
+    192 × 2 = 384
+    192 × 3 = 576
+
+By concatenating each product, we get the 1 to 9 pandigital number 
+192384576. A pandigital number is one that contains all digits from 1 
+to 9 exactly once.
+
+Similarly, for 9:
+
+    9 × 1 = 9
+    9 × 2 = 18
+    9 × 3 = 27
+    9 × 4 = 36
+    9 × 5 = 45
+
+Concatenating gives 918273645, which is also a 1–9 pandigital.
+
+What is the largest 1 to 9 pandigital 9-digit number that can be 
+formed as the concatenated product of an integer ( > 0) with (1, 2, 
+..., n) where n > 1.
+
+Solution:
+
+- We need to find a number that can be concatenated by at least two numbers.
+So the maximum number for the base is a 4 digit number (5 digits would lead 
+to a 10 digit number). 
+- Besides the maximum 4 digit number is 9876 because the final number must
+be pandigital.
+- We can brute force every number from 1 to 9876, compute the products
+from the base and check if the concatenation is 9 digit and pandigital.
+- In the end we return the biggest number.
