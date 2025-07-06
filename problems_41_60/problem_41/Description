@@ -1,0 +1,21 @@
+Description:
+
+- We shall say that an n-digit number is pandigital if it makes use of all the digits 1 to n exactly once. For example, 2143 is a 4-digit pandigital and is also prime.
+
+- What is the largest n-digit pandigital prime that exists?
+
+Solution:
+
+- We want a pandigital (9 digit number using 1 to 9) and a prime.
+- We need a function to test prime (see previous problem)
+- We need a function to test pandigital (see previous problem)
+- We can test numbers in descending order from 987_654_321 to 123_456_789 and we return the first result.
+
+- There is a math trick that says if the sums of digit are divisible by 3, then the whole number is divisible by 3.
+- If 9 digit: 1+2+3+4+5+6+7+8+9=45 --> divisible by 3
+- If 8 digit: 1+2+3+4+5+6+7+8=36 --> divisible by 3
+- If 7 digit: 1+2+3+4+5+6+7=28 --> not divisible by 3
+- If 6 digit: 1+2+3+4+5+6=21 --> divisible by 3
+- If 5 digit: 1+2+3+4+5=15 --> divisible by 3
+- If 4 digit: 1+2+3+4=10 --> not divisible by 3
+--> We have to first look at 7 digit number, then 4 digit number
