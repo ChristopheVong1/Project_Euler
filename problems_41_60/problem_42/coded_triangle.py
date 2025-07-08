@@ -76,5 +76,5 @@ def coded_triangle(filename):
     # Return the counter for triangle words
     return count
 
-# Expected answer:
+# Expected answer: 162
 print(coded_triangle("0042_words.txt"))
